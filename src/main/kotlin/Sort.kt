@@ -6,7 +6,7 @@ fun main() {
         )
     ).println()
 
-    
+
 }
 
 // 冒泡排序算法
