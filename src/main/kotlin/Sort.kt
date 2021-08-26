@@ -35,13 +35,17 @@ fun IntArray.bubbleSort(): IntArray {
 // 插入排序
 fun IntArray.insertSort(): IntArray {
     for (i in this.indices) {
+        // 跳过首个元素
         if (i == 0) {
             continue
         }
 
+        // 获取当前元素
         val num = this[i]
 
+        // 遍历已排序的部分
         for (p in 0 until i) {
+            // 找到插入点
             if (num < this[p]) {
                 // 现将元素后移
                 for (q in i downTo p + 1) {
